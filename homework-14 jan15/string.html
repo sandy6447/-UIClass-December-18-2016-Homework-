@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods</title>
+</head>
+<body>
+ <p id = "demo"></p>
+<p id = "demo1"></p>
+<p id = "demo2"></p>
+<p id = "demo3"></p>
+<p id = "demo4"></p>
+<p id = "demo5"></p>
+<p id = "demo6"></p>
+<p id = "demo7 "></p>
+<p id = "demo8"></p>
+<script type="text/javascript">
+	
+var x = "hi";
+var y = "welcome to the class";
+var z = "  My name is sandeep  ";
+var k = z.length;
+var str = x.concat(y);
+document.getElementById("demo").innerHTML = k;
+document.getElementById("demo1").innerHTML = str;
+var str1 = y.slice(0,7);
+document.getElementById("demo2").innerHTML = str1;
+var str2 = y.slice(-6,-1);
+document.getElementById("demo3").innerHTML = str2;
+var str3 = y.split(" ");
+document.getElementById("demo4").innerHTML = str3;
+var str4 = y.split("");
+document.getElementById("demo5").innerHTML = str4;
+var str5 = z.trim();
+document.write(str5);
+document.write("<br>");
+var str6 = z.replace ("sandeep" ,"sandy");
+document.write(str6);
+document.write("<br>");
+var str7 = y.substr(8,3);
+document.write(str7);
+document.write("<br>");
+var str8 = z.substring(14,7);
+document.write(str8);
+document.write("<br>");
+
+</script>
+
+</body>
+</html>

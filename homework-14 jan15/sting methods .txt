@@ -1,0 +1,40 @@
+Java script strings 
+------> A JavaScript string stores a series of characters like "car."
+		A string can be any text inside double or single quotes: ex : var x ="hi"
+		String indexes are zero-based: The first character is in position 0, the second in 1, and so on.
+
+
+		properties:
+
+		-->constructor: it returns the string constructor function .
+In JavaScript, the constructor property returns the constructor function for an object.
+
+The return value is a reference to the function, not the name of the function:
+
+For JavaScript numbers the constructor property returns function Number() { [native code] }
+
+For JavaScript strings the constructor property returns function String() { [native code] }
+
+For JavaScript booleans the constructor property returns function Boolean() { [native code] }
+ 
+
+---->length -- syntax : str.length() --- it returns the length of the string.
+
+prototype --- it Allows you to add properties and methods to an object.
+
+
+methods :
+
+substr --- syntax : string.substr(start,length) ---- lenght of the string means how many characters to be splitted.
+substring --- syntax : string.substring(start,end)---- from where to where we should split.
+
+
+Number Methods:
+
+is there any difference between isNaN() AND Number.isNaN()
+
+Array methods :
+
+copywithin --- syntax: array.copywithin(target,start,end)
+
+
