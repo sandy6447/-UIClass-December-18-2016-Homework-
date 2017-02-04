@@ -1,0 +1,11 @@
+IIFE- immediately invoked Function Expression.
+	--->it executes functions immediately when it is called.
+	it is useful for  removal og global vatiable pollution.
+
+
+	namespacing in javascript
+		--->Namespace is a container for set of identifiers, functions, methods and all that. It gives a level of direction to its contents so that it will be well distinguished and organized.\
+
+		--->it doesn’t allow us to pollute our code base and makes it cleaner by grouping our code logically and avoiding unexpected and expected collision.
+
+		
