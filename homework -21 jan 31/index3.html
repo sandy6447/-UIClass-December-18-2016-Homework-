@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+          <button onclick="myfunction()"> click it</button>
+
+	      <div id ="demo">This is Div1</div>
+	      <div id = "demo1">This is Div2</div>
+          <p class = "demo2 ">This is paragaraph 1</p>
+          <p class = "demo2">this is paragraph 2</p>
+           <h1>This is Heading 1 </h1>
+           <h2>This is Heading 2 </h2>
+           <p id ="list">
+             
+          <script type="text/javascript">
+          function myfunction()
+          {
+  
+             var x = document.getElementById("demo");
+          	x.innerHTML="hello world";
+
+          	var y = document.getElementsByClassName("demo2");
+
+          	for(i=0;i<y.length;i++)
+          	{
+
+				y[i].style.backgroundColor ="blue";	
+
+          	}
+          	
+              var z = document.getElementsByTagName("div");
+              document.getElementById("list").innerHTML=z.length;
+
+
+
+          }
+          	
+          	
+          </script>
+
+	</body>
+</html>

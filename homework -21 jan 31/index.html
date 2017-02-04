@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+          <button id = "myBtn">Calculate</button>
+          <p id ="demo">
+
+        <script type="text/javascript">
+        	
+           var x= document.getElementById("myBtn");
+           x.addEventListener("click" ,myfunction,false);
+           x.addEventListener("mouseover" ,mysecondfunction,false);
+           function myfunction()
+           {
+           	var p1=window.prompt("enter the first number");
+           	var p2=window.prompt("enter the second number");
+
+           	multiply(p1,p2);
+           
+           }
+
+           function multiply(a,b)
+           {
+             var result = a*b;
+             document.getElementById("demo").innerHTML= "the multiplication of two numbers is :"+ result; 
+
+           }
+
+              function mysecondfunction()
+           {
+           	var p1=5;
+           	var p2=6;
+
+
+             	add(p1,p2);
+             }
+
+           function add(a,b)
+           {
+             var result = a*b;
+             document.getElementById("demo").innerHTML= "the addition of two numbers is :"+ result; 
+
+           }
+
+        </script>
+	</body>
+</html>

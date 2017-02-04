@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+	<button onclick="myfunction()">CLICK IT</button>
+	<button onclick="myfunction1()">try IT</button>
+      <div id ="DIV">
+
+         <h1 class = "list"> hi eveeryone </h1>
+         <p id = "demo">hi how are you?</p>
+         <p id = "demo">welcome to the javascript</p>
+         <p class = "list">this is paragraph 1 </p>
+         <p class = "list">this is paragraph 2 </p>
+         <p class = "list">this is paragraph 3 </p>
+         <p class = "list">this is paragraph 4 </p>
+   </div>
+
+   <script type="text/javascript">
+   	 
+         function myfunction() 
+         {
+
+       var x=document.getElementById("DIV");
+   	   x.querySelector("#demo1").style.backgroundColor ="red";
+   	   x.querySelector(".list").innerHTML = "well done";
+        }
+        function myfunction1() 
+         {
+
+       var x= document.querySelectorAll("p.list");
+       var i;
+       for(i=0;i<x.length;i++)
+   	   x[i].style.backgroundColor ="red";
+   	   //x.querySelectorAll(".list").innerHTML = "well done";
+        }
+
+
+   </script>
+	</body>
+</html>

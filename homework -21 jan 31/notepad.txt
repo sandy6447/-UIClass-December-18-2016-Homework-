@@ -1,0 +1,47 @@
+EVENT LISTERNERS:
+			Syntax:
+		---->element.addEventListener(event, function, useCapture);
+              event --->onclick,mouse over,mousedown
+              function(event handler)-- it is to be executed when the event occurs.
+              use capture---->it is a boolean value specifying whether to use event bubbling or event capturing.
+
+              false--- event bubling (deafult value)
+              true ---event capturing
+
+ Syntax:
+   document.querySelectorAll(css selectors)
+   The querySelectorAll() method returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object.
+  
+ Syntax:
+   document.querySelector(css Selectors)
+
+   The querySelctor() method returns the first element that matches a specified css selector in the document.
+
+
+   Selectors:
+   selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more.
+   id Selector:
+        The id selector uses the id attribute of an HTML element to select a specific element.
+
+        The id of an element should be unique within a page, so the id selector is used to select one unique element!
+
+        To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+   Class Selector:
+    	The class selector selects elements with a specific class attribute.
+
+    	To select elements with a specific class, write a period (.) character, followed by the name of the class.
+
+     The following methods are used for finfind the html elements in the javascript.
+document.getElementById
+document.getElementsByTagName
+document.getElemensByClassName
+
+Event propagation:
+
+			propagation of events from top to bottom or from bottom to top.
+
+event capturing:
+			The events ocuured from top to bottom;
+
+event Bubling:
+              the events strt occuring from bottom to top;
