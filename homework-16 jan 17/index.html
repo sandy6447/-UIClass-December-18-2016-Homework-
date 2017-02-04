@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods</title>
+</head>
+<body>
+<p id = "demo"></p>
+<p id ="demo1"></p>
+<p id = "demo2"></p>
+<p id = "demo3"></p>
+<p id = "demo4"></p>
+<!--
+  <button onclick="arr.forEach(myFunction)">Try it</button> *// -->
+<script>
+	
+    var arr = [10, 20, 30, 40, 50];
+         var sum =0;
+   arr.forEach(myFunction);
+
+   	function myFunction(item,index)
+    {
+       sum+= item;
+       document.write("sum of the elements :"+sum);
+       document.write("<br>");
+
+    }
+
+    function getSum(total,num)
+    {
+    	return total+Math.round(num);
+    }
+    var arr2= [4,9,16,25,36,49]
+    document.getElementById("demo").innerHTML= arr2.map(Math.sqrt);
+    var arr3 =[1,5,9,6.5,9.9,0.1]
+    document.getElementById("demo1").innerHTML=arr3.reduce(getSum,10);
+    document.write("array before sorting is:"+arr3);
+    document.write("<br>");
+    document.write("Sorted Array is :"+arr3.sort(function(a,b) {return a-b}));
+    document.write("<br>");
+    document.write("reverse of the array is :"+arr2.reverse());
+
+    var person = new Object();
+    person.firstName= "sandeep";
+    person.lastName= "aluri";
+    person.age ="27";
+    person.dob = "01/12/1990";
+
+   document.getElementById("demo2").innerHTML= person.firstName+ "is" + person.age + "years old";
+
+   person .nationality ="indian";
+   document.getElementById("demo3").innerHTML = person.firstName + "is an " + person.nationality ;
+   delete person.dob;
+    document.getElementById("demo4").innerHTML = person.firstName + "Dob is  " + person.dob;  
+    document.write("<br>")
+     document.write(person.firstName + " age is"+ person.age);
+     delete person.age;
+     document.write("<br>")
+     document.write("After Deletion"+ person.firstName + "age is " + person.age);
+      document.write("<br>");
+     if(person.hasOwnProperty('firstName'))
+     {
+     	document.write("Property exists and person name is "+ person.firstName);
+     }
+       else
+       {
+       	document.write("Property doesnot exists");
+       }
+       person.lastName ="kingg";
+       document.writeln(person.lastName);
+</script>
+</body>
+</html>

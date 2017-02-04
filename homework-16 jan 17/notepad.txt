@@ -1,0 +1,63 @@
+Arrays:
+	methods:
+		--->forEach method
+			it runs the loop for each every element in the array.
+		Syntax: 
+			array.forEach(function(currentValue, index, arr), thisValue)
+		example:
+		
+		--->Map method
+        The map() method creates a new array with the results of calling a function for every array element.
+        The map() method calls the provided function once for each element in an array, in order.
+        Syntax: 
+        array.map(function (current value, index, arr),thisValue)
+ 		
+ 		-->Reduce Method
+ 		The reduce() method reduces the array to a single value.
+		The reduce() method executes a provided function for each value of the array (from left-to-right).
+		The return value of the function is stored in an accumulator (result/total).
+		Syntax:
+		array.reduce(function(total, currentvalue,index,arr),thisValue.)
+
+		-->sort Method
+		it sorts the numbers or strings in an ascending order manner.
+		Syntax:
+		array.sort(CompareFunction)
+
+
+JavaScipt Objects:
+		3 different ways to create a javascript object:
+			1) Define and create a single object, using an object literal.
+            Example: 
+            var person = {firstName:“Mick", lastName:“Moor", age:35};
+            2) Define and create a single object, with the keyword new.
+            Example:
+            var person = new Object();
+            person.firstName = “Mike";
+            person.lastName = “Moor";
+            person.age = 35;
+           3) Define an object constructor, and then create objects of the constructed type.
+           Example:
+           function person(first, last, age, eye) 
+           {   this.firstName = first;    
+           this.lastName = last;   
+            this.age = age;   
+            this.eyeColor = eye;}
+            var myFather = new person("Johny", “Moe", 20, "blue");
+           var myMother = new person(“Aally", “Jones", 28, "green");
+
+    properties:
+
+    -----the values associated wit this object are the properties.
+    Syntax: ObjectName.property
+    Example:: person.age,
+              person.lastName;
+
+we can access the object property by calling its property
+    person.age
+we can add the property to  the object by specifying the property and its value.
+   person.nationality = "indian";
+   we can delete the property by using the delete keyword.
+   delete person.age;
+
+   
