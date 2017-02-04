@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" version="2.0" href="menu.xsl"?>
+<PIZZA_menu> 
+   <food> 
+       <name>PEPPERONI PIZZA</name> 
+       <price>$7.50(S)
+	          $8.50(M)
+	          $9.50(L)</price>
+		<toppings>Pepperoni
+                  olives  </toppings>		
+       <description>Premium pepperoni, real cheese made from mozzarella and your choice of crust</description> 
+       <calories>210(S)
+                 220(M)
+	             240(L)</calories>
+	   </food> 
+   <food> 
+       <name>SAUSAGE PIZZA</name> 
+       <price>$7.95(S)
+              $8.95(M)
+	          $9.95(L)</price>	
+        <toppings>mushrooms
+                  black olives
+                  sasuage </toppings>				  
+       <description>Babu john's pork sausage is made from a proprietary recipe without artificial flavors, colors, preservatives or fillers.</description> 
+       <calories>220(S)
+                 230(M)
+	             250(L)</calories>
+	   </food> 
+   <food> 
+       <name>CHEESE PIZZA</name> 
+       <price>$6.95(S)
+              $7.95(M)
+	          $8.95(L)</price>  
+		<toppings> tomatoes </toppings>	  
+       <description>Real mozzarella, pizza sauce and your choice of crust</description> 
+       <calories>180(S)
+                 220(M)
+	             240(L)</calories>
+	   </food> 
+   <food> 
+       <name>HAWAIIAN BBQ CHICKEN PIZZA</name> 
+       <price>$8.50(S)
+              $9.50(M)
+	          $10.50(L)</price>	
+        <toppings> onions
+                   chicken
+                   olives </toppings>					
+       <description>Aloha! You’re on island time with the Hawaiian BBQ Chicken pizza. Smothered in zesty BBQ sauce, it’s topped with grilled all-white chicken, bacon, fresh-sliced onions and sweet, juicy pineapple tidbits for a taste of the tropics.</description> 
+       <calories>240(S)
+                 255(M)
+	             280(L)</calories>
+	   </food> 
+   <food> 
+       <name>CHICKEN AND VEGGIE PIZZA</name> 
+       <price>$7.95(S)
+              $8.95(M)
+	          $8.95(L)</price>
+        <toppings> chicken
+                   olives
+                   tomatoes </toppings>				   
+       <description>300 or fewer calories per slice with a lighter portion of cheese. We trimmed the calories, not the taste. Grilled all-white chicken, fresh-sliced onions, Roma tomatoes and green peppers, plus Crimini mushrooms, ripe black olives and real cheese made from mozzarella, all layered on our signature pizza sauce and hand-tossed original crust.</description> 
+       <calories>200(S)
+                 220(M)
+	             240(L)</calories>	   
+	   </food> 
+	   
+</PIZZA_menu>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 10px;
+}
+body{margin:5px;}
+</style>
+<body>
+
+<body bgcolor="yellow">
+
+<table width="90%" height="50%" align="center"   border"0" >
+<marquee><h1>PIZZERIA</h1></marquee>
+<!-- used to slideshow the name -->
+          <tr style="background-color:blue" >
+            <td width="20%" height="40%" style="text-align:center">
+                <p><a href="Home.html"><em>Home</em></p>
+            </td>
+            <td width="20%" height="15%" style="text-align:center">
+               <p><a href="order.html"><em>Order</em></p>
+            </td>
+            <td width="20%" height="15%" style="text-align:center">
+                <p><a href="Menu.html"><em>Menu</em></p>
+            </td>
+            
+            <td width="20%" height="15%" style="text-align:center">
+                <p><a href="Contactus.html"><em>Contact</em></p>
+            </td>
+                    </tr>
+					
+</table>
+<br>                  
+<button type="button"  align="center" onclick="loadXMLDoc()">Get my pizza menu</button>
+<br><br>  
+<table id="demo"></table>
+<script>
+// calling the  function loadXMLDoc
+function loadXMLDoc()
+ { 
+   //creating an xml httprequest object.
+  var xmlhttp = new XMLHttpRequest();
+  //calling the function
+  xmlhttp.onreadystatechange = function()
+  {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "menu.xml", true);// get a request to access xml file 
+  xmlhttp.send();//send request
+}
+function myFunction(xml) {
+  var i;
+  //response from the server.
+  var xmlEx = xml.responseXML;
+  //creation of table 
+  var table="<tr><th>Name</th><th>Price</th><th>Toppings</th><th>Description</th><th>Calories(per serving)</th></tr>";
+  var x = xmlDoc.getElementsByTagName("food");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +//accessing the xml elements by using tag name.
+    "</td><td>" +
+    x[i].getElementsByTagName("price")[0].childNodes[0].nodeValue +
+    "</td><td>"+
+	x[i].getElementsByTagName("toppings")[0].childNodes[0].nodeValue +
+    "</td><td>"+
+	x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+    "</td><td>"+
+	x[i].getElementsByTagName("calories")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+	
+  }
+  document.getElementById("demo").innerHTML = table; //displaying the result in the table.
+}
+</script>
+
+</body>
+</html>
+

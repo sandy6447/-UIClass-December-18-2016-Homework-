@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src = "Orderform.js" type= "text/javascript"></script>
+</head>
+<body background = "p8.jpg">
+<table width="90%" height="50%" align="center"   border"0" >
+<marquee><h1>PIZZERIA</h1></marquee>
+<tr style="background-color:green" >
+            <td width="20%" height="40%" style="text-align:center">
+                <p><a href="Home.html"><em>Home</em></p>
+            </td>
+            <td width="20%" height="15%" style="text-align:center">
+               <p><a href="order.html"><em>Order</em></p>
+            </td>
+            <td width="20%" height="15%" style="text-align:center">
+                <p><a href="Menu.html"><em>Menu</em></p>
+            </td>
+            
+            <td width="20%" height="15%" style="text-align:center">
+                <p><a href="Contactus.html"><em>Contact</em></p>
+            </td>
+          
+
+                    </tr>
+</table>
+<form action="" id="pizzaform" method= "post" onsubmit="return false;">
+<h1 align = "center">Pizza Order Form </h1>
+   <fieldset >
+    <legend>Make your size!</legend>
+    <label >Size Of the Pizza</label>
+    <input type="radio"  name="size" value="small"/>small 5$
+    <input type="radio"  name="size" value="medium"/>medium 7$
+    <input type="radio"  name="size" value="Large"/>Large 9$
+    <input type="radio"  name="size" value="X-Large"/>X-Large 12$
+	</fieldset>
+	 <fieldset >
+	  <legend>Select Crust </legend>
+	  <input type="radio" name="crust" value="thin"> Thin 2$
+      <input type="radio" name="crust" value="Original">original 4$
+	  <input type="radio" name="crust" value="Pan"> Pan 5$
+     </fieldset>
+	 <fieldset >
+	  <legend>Select Toppings </legend>
+	  <h2> Veggies 1.5$each</h2>
+	  <input type="checkbox" name="toppings" value="Peppers "> Peppers
+	  <br>
+      <input type="checkbox" name="toppings" value="Onions" > Onions
+	  <br>
+	  <input type="checkbox" name="toppings" value="Mushrooms" > Mushrooms
+	  <br>
+	  <input type="checkbox" name="toppings" value="Olives"> Olives 
+	  
+	  <h3>Meat 1.5$each </h3>
+	  <input type="checkbox" name="toppings" value="Chicken "> Chicken
+	  <br>
+      <input type="checkbox" name="toppings" value="Beef"> Beef
+	  <br>
+	  <input type="checkbox" name="toppings" value="Sasuage"> Sasuage
+	  <br>
+	  <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni
+	  
+	 </fieldset>
+	 <fieldset >
+	    <legend>Select sides</legend>
+		<select name="sides">
+		<option value="None">None</option>
+    <option value="fries">Fries 3$</option>
+    <option value="Bread sticks">Bread sticks 4$</option>
+    <option value="cheese sticks">Cheese Sticks 4$</option>
+     </select>
+	 </fieldset>
+	 <table align="center">
+<tr><td style="background-color:#4FB4C6;">TOTAL ORDER AMOUNT: <span name='amount' id = 'totalPrice'></td></span></tr>
+</table>
+
+ 
+ <p align="center">
+<input id ="submit"  value="Calculate Order total" type= "submit" onclick="calculateTotal()"/><br>
+<fieldset >
+   <legend>Contact Information </legend>
+   Name:&nbsp&nbsp&nbsp   <input type = "text" name = "customer" ></td>
+   <br>
+   <br>
+   Address: <input type = "text" name = "Address" > 
+	<br>
+	<br>
+   City:&nbsp &nbsp &nbsp &nbsp    <input type = "text" name = "City" >
+	<br>
+	<br>
+   State: &nbsp &nbsp&nbsp  <input type = "text" name = "State">
+	<br>
+	<br>
+   Zip: &nbsp &nbsp &nbsp &nbsp   <input type = "text" name = "Zip">
+	 <br>
+	 <br>
+   Phone:&nbsp &nbsp  <input type = "text" name = "Phone">
+	 <br>
+	 <br>
+   Email:&nbsp &nbsp   <input type = "text" name = "Email">
+     <br>
+	 <br>
+	 
+	 </fieldset>
+	 <br>
+	 <br>
+	 <p align = "center" >
+	 <input type = "button" value = "Submit" align = "center" width = "40%" height= "10%" onclick = "dosubmit()"/>
+	 <input type = "button" value = "Reset" onclick = "doclear()"/>
+	</p>
+
+</form>
+ </body>
+ </html>
