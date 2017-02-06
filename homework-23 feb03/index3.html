@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Child Class selectors </title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <style>
+       	
+       	.blueborder{
+             font-size: 30px;
+       		font-weight: italic;
+
+           }   
+         .redborder{
+
+         	color:blue;
+         }     
+         .greenborder{
+           
+           color:red;
+           text-decoration: underline;
+           font-size:40px;
+
+         }
+ 
+       </style>
+       	
+
+	</head>
+	<body>
+
+  <div>
+    <p>This is para 1 </p>
+    <p>This is para 2 </p>
+    <p>this is para 3 </p>
+    </div>
+     <div>
+    <p>This is para 1 </p>
+    </div>
+     <div>
+    <p>This is para 1 </p>
+    <p>This is para 2 </p>
+    </div>
+     <div>
+    <p>This is para 1 </p>
+    <p>This is para 2 </p>
+    <p>this is para 3 </p>
+    <p>this is para 4 </p>
+    </div>
+     <div>
+      None
+        </div>
+<script>
+  
+$("div p:first-child").addClass("blueborder");
+$("div p:last-child").addClass("redborder");
+$("p:first-of-type").addClass("greenborder");
+$("p:last-of-type").css("color","lightgreen");
+$("div p:first-child").addClass("blueborder");
+$("div p:only-child").css("border","2px solid");
+$("div p:nth-child(2)" ).append( "<span> - 2nd!</span>" );
+
+</script>
+
+</body>
+</html>

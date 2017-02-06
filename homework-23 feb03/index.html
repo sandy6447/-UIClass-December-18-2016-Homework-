@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <style>
+       	
+       	.blueborder{
+             font-size: 30px;
+       		font-weight: italic;
+
+           }   
+         .redborder{
+
+         	color:blue;
+         }     
+
+ 
+       </style>
+       	
+
+	</head>
+	<body>
+      <table border="1">
+         <tr> 
+         	<td> row with index 1</td>
+         	<td> row with index 2 </td>
+         	<td> row with index 3</td>
+         	</tr>
+         	<tr> 
+         	<td></td>
+         	<td> row with index 5 </td>
+         	<td> row with index 6</td>
+         	</tr>
+         	<tr> 
+         	<td> row with index 7</td>
+         	<td></td>
+         	<td> row with index 9</td>
+         	</tr>
+         	<tr> 
+         	<td> row with index 10</td>
+         	<td> row with index 11</td>
+         	<td></td>
+         	</tr>
+ </table>
+
+<div id ="test">
+	
+	<p>This is para 1 </p>
+	<p>This is para 2 </p>
+	<p>This is para 3 </p>
+	<p>This is para 4 </p>
+</div>
+
+
+</div>
+
+<div>
+<label>FirstName:<input type="text"></input></label>
+<label>LastName:<input type="text"></input></input></label>
+<label>DOB:<input type="text" ></input></label>
+<label>Age:<input type="text" ></input></label>
+<label>Nationality:<input type="text"></input></label>
+</div>
+ <script >
+ 	
+jQuery("tr:even").css ("background-color","blue");
+
+jQuery("td:even").css ("background-color","yellow");
+jQuery("td:odd").css ("background-color","red");
+jQuery("tr:first").addClass ("blueborder");
+jQuery(":text ").toggleClass("redborder");
+jQuery("#test").css("font-weight","italic");
+$(":empty").css("background-color","violet");
+
+ </script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Content and form filters </title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <style>
+        .marked
+
+
+        {
+        	background-color:blue;
+        	border: 2px solid green
+        	;
+        }
+        </style>
+
+	</head>
+	<body>
+          <div> hi everyone </div>
+          <div> how are you </div>
+          <div> hello how are you doing today?</div>
+          <div> All are fine</div>
+          <div><p>this is para 1</p></div>
+          
+  <input type="button" value="Input Button">
+  <input type="checkbox">
+  <input type="file">
+  <input type="hidden">
+ 
+  <input type="image">
+  <input type="password">
+  <input type="radio">
+ 
+  <input type="reset">
+  <input type="submit">
+  <input type="text">
+ 
+<script>
+	jQuery("div:contains('are')").css("text-decoration","underline");
+	jQuery("div:has(p)").css("border","2px solid lightgreen");
+    jQuery(":input").css("background-color","blue");
+    jQuery(":button").css("background-color","green");
+    jQuery(":password").css("background-color","pink");
+    jQuery(":reset").css("border","3px solid");
+    //jQuery(":checkbox").wrap(<style='background-color:red'>);
+    jQuery(":submit").css("background-color","yellow");
+</script>
+</body>
+</html>
